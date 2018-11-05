@@ -1,9 +1,14 @@
 <?php
 
-$contador = 5000;
+$contador = 1;
+$divisor = 2;
 
-while($contador <= 5543)
+while($contador <= 100)
 {
-    echo $contador."<br>";
+    $resto = $contador % $divisor;
+    if($resto == 0)
+    {
+        echo $contador."<br>";
+    }
     $contador ++; 
 }
