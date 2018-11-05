@@ -12,7 +12,7 @@ Class Pessoa
 
     public function getNome()
     {
-        return $this->nome;
+        return $this->nome; 
     }
 
     public function setRenda($renda)

@@ -8,10 +8,6 @@
 </head>
 <body>
 
-    <script>
-        alert('teste');
-    </script>
-
     <?php 
         require_once('Classes/CalcImposto.php');
         $nome = $_POST['nome'];
@@ -39,8 +35,6 @@
         {
             $calcImposto = new calcImposto($nome, $renda);
             $valorImposto = $calcImposto->calcImposto();
-
-            echo $valorImposto;
         }
     ?>
 
@@ -49,6 +43,10 @@
         Renda: <input type="text" name="renda"><br>
         <input type="submit" value="Calcular">
     </form>
+
+    <?php
+         echo "<b style='color: red; top: 50px; position: relative;'> {$valorImposto} </b>";
+    ?>
 
 </body>
 </html>

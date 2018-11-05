@@ -34,9 +34,3 @@ Class CalcImposto extends Pessoa
         }
     }
 }
-
-
-/*
-$teste = new CalcImposto('Rodrigo', '1050.20');
-echo $teste->CalcImposto();
-*/
